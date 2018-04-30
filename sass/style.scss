@@ -1,0 +1,41 @@
+@import '__variables';
+@import '__mixins';
+
+.container {
+    width: 100%;
+}
+
+#blue {
+    background-color: $blue;
+    color: $white;
+    padding: $padding;
+    @include border-radius(10px, 15px);
+    @extend %message-shared;
+    @extend %margin-bottom;
+    font-size: $font;
+    font-weight: $fontWeight;
+}
+
+#red {
+    background-color: red;
+    color: $white;
+    padding: $padding;
+    @include border-radius(25px, 35px);
+    @extend %margin-bottom;
+}
+
+#green {
+    background-color: $green;
+    color: $white;
+    padding: $padding;
+    @include border-radius(35px, 25px);
+    @extend %margin-bottom;
+}
+
+#orange {
+    background-color: $orange;
+    color: $white;
+    padding: $padding;
+    @include border-radius(20px, 45px);
+}
+

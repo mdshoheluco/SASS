@@ -1,0 +1,14 @@
+@mixin border-radius($radiuslr, $radiussr) {
+    border-top-left-radius: $radiuslr;
+    border-bottom-left-radius: $radiussr;
+    border-top-right-radius: $radiussr;
+    border-bottom-right-radius: $radiuslr; 
+}
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+%margin-bottom {
+    margin-bottom: 15px;
+}
